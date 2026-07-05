@@ -1331,7 +1331,7 @@ function renderProfilPage(){
 
 document.querySelectorAll('.reseau-item[data-link]').forEach(el=>{el.onclick=()=>{const l=el.getAttribute('data-link');if(tg)tg.openLink(l);else window.open(l,'_blank');};});
 
-const ADMIN_PIN = '0259';
+const ADMIN_PIN = '0275';
 let adminTapCount=0;let adminTapTimer=null;
 document.getElementById('admin-trigger').addEventListener('click',()=>{adminTapCount++;clearTimeout(adminTapTimer);adminTapTimer=setTimeout(()=>{adminTapCount=0;},1200);if(adminTapCount>=5){adminTapCount=0;openAdminLogin();}});
 
